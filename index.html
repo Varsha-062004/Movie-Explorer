@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>🎬 Movie Explorer</h1>
+    <p>Discover movies instantly</p>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search movies..." />
+      <button id="searchBtn">Search</button>
+      <button id="toggleDark">🌙</button>
+    </div>
+  </header>
+
+  <!-- MOVIES -->
+  <main id="movies" class="movies"></main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>🍿 Powered by OMDb API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
